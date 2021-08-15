@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="Pochta_Marka_Desktop.UserControllers.ProductTypeUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Pochta_Marka_Desktop.UserControllers"
+             mc:Ignorable="d" 
+             Loaded="UserControl_Loaded"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border Padding="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Тип продукта" TextAlignment="Center" FontSize="24" Margin="0,5,0,10" />
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Height="Auto" FontSize="18" x:Name="btnAdd" Click="btnAdd_Click"  Content="Добавлять" Margin="0,10"/>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <DataGrid x:Name="DG" MouseDoubleClick="DG_MouseDoubleClick" ItemsSource="{Binding}" AutoGenerateColumns="False" CanUserAddRows="False" SelectionMode="Single" SelectionUnit="FullRow" Grid.Row="1" FontSize="16" Margin="0,10,0,10">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="№" Width="100"  Binding="{Binding Id, Mode=OneWay}"/>
+                            <DataGridTextColumn Header="Тип" Width="*"  Binding="{Binding ProductId, Mode=OneWay}"/>
+                            <DataGridTextColumn Header="Hаименование" Width="*"  Binding="{Binding Name, Mode=OneWay}"/>
+                            <DataGridTextColumn Header="Цена" Width="*" Binding="{Binding Price, Mode=OneWay}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </Grid>
+
+        </Grid>
+    </Border>
+</UserControl>

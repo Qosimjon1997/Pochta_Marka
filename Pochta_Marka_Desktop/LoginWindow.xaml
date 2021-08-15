@@ -1,0 +1,41 @@
+﻿<Window x:Class="Pochta_Marka_Desktop.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        SizeToContent="Height"
+        Loaded="Window_Loaded"
+        KeyDown="Window_KeyDown"
+        Title="Pochta Sotuv" 
+        Height="Auto" 
+        Width="400">
+    <Border Margin="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Margin="0,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Login:" FontSize="16" Padding="0,0,10,0"/>
+                <TextBox Grid.Column="1" x:Name="txtLogin" FontSize="16" TabIndex="0"/>
+            </Grid>
+            <Grid Grid.Row="1" Margin="0,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Password:" FontSize="16" Padding="0,0,10,0"/>
+                <PasswordBox Grid.Column="1" x:Name="txtPassw" FontSize="16" TabIndex="1"/>
+            </Grid>
+            <Button Grid.Row="2" Height="Auto" FontSize="16" Margin="0,10,0,0" Content="Enter" TabIndex="2" x:Name="btnEnter" Click="btnEnter_Click"/>
+        </Grid>
+    </Border>
+</Window>
