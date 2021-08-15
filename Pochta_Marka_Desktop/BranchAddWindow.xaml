@@ -9,7 +9,7 @@
         SizeToContent="Height"
         WindowStartupLocation="CenterScreen"
         KeyDown="Window_KeyDown"
-        Title="BranchAddWindow" Height="Auto" Width="800">
+        Title="Pochta Sotuv" Height="Auto" Width="800">
     <Border Padding="10">
         <Grid>
             <Grid.RowDefinitions>

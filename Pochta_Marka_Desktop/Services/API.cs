@@ -2,7 +2,7 @@
 {
     public class API
     {
-        public static readonly string BASE_URL = "https://localhost:5001/api/";
+        public static readonly string BASE_URL = "https://pochta-marka.herokuapp.com/api/";
 
         public static readonly string ALL_EMPLOYEE = BASE_URL + "Employees";
 

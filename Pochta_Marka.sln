@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pochta_Marka_WebApi", "Pochta_Marka_WebApi\Pochta_Marka_WebApi.csproj", "{4660D87E-CB1D-49B3-AC64-80882D681F0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pochta_Marka_Desktop", "Pochta_Marka_Desktop\Pochta_Marka_Desktop.csproj", "{D1134C2D-B7FD-46F7-8B88-7F79F9D83692}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pochta_Marka_Desktop", "Pochta_Marka_Desktop\Pochta_Marka_Desktop.csproj", "{D1134C2D-B7FD-46F7-8B88-7F79F9D83692}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -9,7 +9,7 @@
         Loaded="Window_Loaded"
         WindowStartupLocation="CenterScreen"
         KeyDown="Window_KeyDown"
-        Title="ProductTypeChangeWindow" Height="Auto" Width="800">
+        Title="Pochta Sotuv" Height="Auto" Width="800">
     <Border Margin="10">
         <Grid>
             <Grid.RowDefinitions>

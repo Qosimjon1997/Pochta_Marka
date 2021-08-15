@@ -9,7 +9,7 @@
         Loaded="Window_Loaded"
         SizeToContent="Height"
         WindowStartupLocation="CenterScreen"
-        Title="BranchChangeWindow" Height="Auto" Width="800">
+        Title="Pochta Sotuv" Height="Auto" Width="800">
     <Border Padding="10">
         <Grid>
             <Grid.RowDefinitions>
