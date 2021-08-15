@@ -10,8 +10,8 @@ using Pochta_Marka_WebApi.Data;
 namespace Pochta_Marka_WebApi.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210813162505_Init")]
-    partial class Init
+    [Migration("20210815123245_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -177,37 +177,29 @@ namespace Pochta_Marka_WebApi.Migrations
 
             modelBuilder.Entity("Pochta_Marka_WebApi.Models.Sale", b =>
                 {
-                    b.HasOne("Pochta_Marka_WebApi.Models.Branch", "Branch")
+                    b.HasOne("Pochta_Marka_WebApi.Models.Branch", null)
                         .WithMany("Sales")
                         .HasForeignKey("BranchId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Pochta_Marka_WebApi.Models.Employee", "Employee")
+                    b.HasOne("Pochta_Marka_WebApi.Models.Employee", null)
                         .WithMany("Sales")
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Pochta_Marka_WebApi.Models.Product", "Product")
+                    b.HasOne("Pochta_Marka_WebApi.Models.Product", null)
                         .WithMany("Sales")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Pochta_Marka_WebApi.Models.ProductType", "ProductType")
+                    b.HasOne("Pochta_Marka_WebApi.Models.ProductType", null)
                         .WithMany("Sales")
                         .HasForeignKey("ProductTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Branch");
-
-                    b.Navigation("Employee");
-
-                    b.Navigation("Product");
-
-                    b.Navigation("ProductType");
                 });
 
             modelBuilder.Entity("Pochta_Marka_WebApi.Models.Branch", b =>
